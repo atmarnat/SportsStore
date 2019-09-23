@@ -1,4 +1,5 @@
 ﻿@model ProductsListViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelper
 
 
 @foreach (var p in Model.Products)
@@ -6,8 +7,8 @@
     @Html.Partial("ProductSummary", p)
 }
 
-    <div page-model="@Model.PagingInfo" page-action="List" page-classes-enabled="true"
-         page-class="btn" page-class-normal="btn-secondary"
-         page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
+<div page-model="@Model.PagingInfo" page-action="List" page-classes-enabled="true"
+     page-class="btn" page-class-normal="btn-secondary"
+     page-class-selected="btn-primary" page-url-category="@Model.CurrentCategory"
      class="btn-group pull-right m-1">
 </div>
