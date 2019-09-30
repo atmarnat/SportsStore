@@ -124,7 +124,7 @@ namespace SportsStore6.Tests
             // Assert - check the method result type
             Assert.IsType<ViewResult>(result);
         }
-        /*
+        
         [Fact]
         public void Can_Delete_Valid_Products()
         {
@@ -148,7 +148,7 @@ namespace SportsStore6.Tests
             // Assert - ensure that the repository delete method was
             // called with the correct Product
             mock.Verify(m => m.DeleteProduct(prod.ProductID));
-        }*/
+        }
 
         private T GetViewModel<T>(IActionResult result) where T : class
         {
